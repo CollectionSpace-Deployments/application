@@ -1,0 +1,69 @@
+{
+    "presentation": {
+        "properties": {
+            "relations": {
+                "default": {},
+                "type": "object"
+            },
+            "termsUsed": {
+                "default": [],
+                "type": "array"
+            },
+            "csid": {
+                "type": "string"
+            },
+            "fields": {
+                "properties": {
+                    "presentationLocationInternal": {
+                        "type": "string"
+                    },
+                    "tenantId": {
+                        "type": "string"
+                    },
+                    "presentationType": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "exhibitionTitle": {
+                        "type": "string"
+                    },
+                    "presentationNote": {
+                        "type": "string"
+                    },
+                    "uri": {
+                        "type": "string"
+                    },
+                    "updatedBy": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "date"
+                    },
+                    "nametitle": {
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "date"
+                    },
+                    "refName": {
+                        "type": "string"
+                    },
+                    "presentationPresenter": {
+                        "type": "string"
+                    },
+                    "presentationRefNumber": {
+                        "type": "string"
+                    },
+                    "circulatedVenues": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "type": "object"
+    }
+}

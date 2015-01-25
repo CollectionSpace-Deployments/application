@@ -21,6 +21,7 @@
 			<include src="base-procedure-intake.xml"/>
 			<include src="base-procedure-loanin.xml"/>
 			<include src="base-procedure-loanout.xml"/>
+			<include src="base-procedure-presentation.xml"/>
 			<include src="base-procedure-media.xml"/>
 			<include src="base-procedure-valuationcontrol.xml"/>
 			<include src="base-procedure-movement.xml"/>
@@ -47,6 +48,8 @@
 			<include src="base-authority-concept.xml"/>
 			<include src="base-authority-work-termList.xml"/>
 			<include src="base-authority-work.xml"/>
+			<include src="base-authority-exhibition-termList.xml"/>
+			<include src="base-authority-exhibition.xml"/>
 
 			<include src="base-vocabularies.xml"/>
 

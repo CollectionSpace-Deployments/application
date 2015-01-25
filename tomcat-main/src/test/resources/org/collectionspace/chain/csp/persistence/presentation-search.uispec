@@ -1,0 +1,216 @@
+{
+    ".csc-presentation-presentationRefNumber": {
+        "decorators": [
+            {
+                "func": "cspace.makeRepeatable",
+                "type": "fluid",
+                "options": {
+                    "repeatTree": {
+                        "expander": {
+                            "tree": {
+                                ".csc-presentation-presentationRefNumber": "${{row}.presentationRefNumber}"
+                            },
+                            "type": "fluid.noexpand"
+                        }
+                    },
+                    "elPath": "presentationRefNumbers",
+                    "hidePrimary": true
+                }
+            }
+        ]
+    },
+    ".csc-presentation-presentationLocationInternal": {
+        "decorators": [
+            {
+                "func": "cspace.makeRepeatable",
+                "type": "fluid",
+                "options": {
+                    "repeatTree": {
+                        "expander": {
+                            "tree": {
+                                ".csc-presentation-presentationLocationInternal": {
+                                    "decorators": [
+                                        {
+                                            "func": "cspace.autocomplete",
+                                            "type": "fluid",
+                                            "options": {
+                                                "queryUrl": "../../../tenant/core/presentation/autocomplete/presentationLocationInternal",
+                                                "vocabUrl": "../../../tenant/core/presentation/source-vocab/presentationLocationInternal"
+                                            }
+                                        }
+                                    ],
+                                    "value": "${{row}.presentationLocationInternal}"
+                                }
+                            },
+                            "type": "fluid.noexpand"
+                        }
+                    },
+                    "elPath": "presentationLocationInternals",
+                    "hidePrimary": true
+                }
+            }
+        ]
+    },
+    ".csc-presentation-exhibitionTitle-label": {
+        "messagekey": "presentation-exhibitionTitleLabel"
+    },
+    ".csc-presentation-presentationLocationInternal-label": {
+        "messagekey": "presentation-presentationLocationInternalLabel"
+    },
+    ".csc-presentation-updatedAtEnd": {
+        "decorators": [
+            {
+                "func": "cspace.datePicker",
+                "type": "fluid"
+            }
+        ],
+        "value": "${updatedAtEnd}"
+    },
+    ".csc-presentation-exhibitionTitle": {
+        "decorators": [
+            {
+                "func": "cspace.makeRepeatable",
+                "type": "fluid",
+                "options": {
+                    "repeatTree": {
+                        "expander": {
+                            "tree": {
+                                ".csc-presentation-exhibitionTitle": {
+                                    "decorators": [
+                                        {
+                                            "func": "cspace.autocomplete",
+                                            "type": "fluid",
+                                            "options": {
+                                                "queryUrl": "../../../tenant/core/presentation/autocomplete/exhibitionTitle",
+                                                "vocabUrl": "../../../tenant/core/presentation/source-vocab/exhibitionTitle"
+                                            }
+                                        }
+                                    ],
+                                    "value": "${{row}.exhibitionTitle}"
+                                }
+                            },
+                            "type": "fluid.noexpand"
+                        }
+                    },
+                    "elPath": "exhibitionTitles",
+                    "hidePrimary": true
+                }
+            }
+        ]
+    },
+    ".csc-presentation-presentationType-label": {
+        "messagekey": "presentation-presentationTypeLabel"
+    },
+    ".csc-presentation-updatedAtStart-label": {
+        "messagekey": "presentation-updatedAtStartLabel"
+    },
+    ".csc-presentation-updatedBy-label": {
+        "messagekey": "presentation-updatedByLabel"
+    },
+    ".csc-presentation-presentationPresenter": {
+        "decorators": [
+            {
+                "func": "cspace.makeRepeatable",
+                "type": "fluid",
+                "options": {
+                    "repeatTree": {
+                        "expander": {
+                            "tree": {
+                                ".csc-presentation-presentationPresenter": {
+                                    "decorators": [
+                                        {
+                                            "func": "cspace.autocomplete",
+                                            "type": "fluid",
+                                            "options": {
+                                                "queryUrl": "../../../tenant/core/presentation/autocomplete/presentationPresenter",
+                                                "vocabUrl": "../../../tenant/core/presentation/source-vocab/presentationPresenter"
+                                            }
+                                        }
+                                    ],
+                                    "value": "${{row}.presentationPresenter}"
+                                }
+                            },
+                            "type": "fluid.noexpand"
+                        }
+                    },
+                    "elPath": "presentationPresenters",
+                    "hidePrimary": true
+                }
+            }
+        ]
+    },
+    ".csc-presentation-updatedAtStart": {
+        "decorators": [
+            {
+                "func": "cspace.datePicker",
+                "type": "fluid"
+            }
+        ],
+        "value": "${updatedAtStart}"
+    },
+    ".csc-presentation-presentationPresenter-label": {
+        "messagekey": "presentation-presentationPresenterLabel"
+    },
+    ".csc-presentation-updatedAtEnd-label": {
+        "messagekey": "presentation-updatedAtEndLabel"
+    },
+    ".csc-presentation-updatedBy": {
+        "decorators": [
+            {
+                "func": "cspace.makeRepeatable",
+                "type": "fluid",
+                "options": {
+                    "repeatTree": {
+                        "expander": {
+                            "tree": {
+                                ".csc-presentation-updatedBy": "${{row}.updatedBy}"
+                            },
+                            "type": "fluid.noexpand"
+                        }
+                    },
+                    "elPath": "updatedBys",
+                    "hidePrimary": true
+                }
+            }
+        ]
+    },
+    ".csc-presentation-presentationType": {
+        "decorators": [
+            {
+                "func": "cspace.makeRepeatable",
+                "type": "fluid",
+                "options": {
+                    "repeatTree": {
+                        "expander": {
+                            "tree": {
+                                ".csc-presentation-presentationType": {
+                                    "default": "",
+                                    "optionnames": [
+                                        "Please select a value",
+                                        "Premiere",
+                                        "Other term"
+                                    ],
+                                    "optionlist": [
+                                        "",
+                                        "premiere",
+                                        "otherterm"
+                                    ],
+                                    "selection": "${{row}.presentationType}"
+                                }
+                            },
+                            "type": "fluid.noexpand"
+                        }
+                    },
+                    "elPath": "presentationTypes",
+                    "hidePrimary": true
+                }
+            }
+        ]
+    },
+    ".csc-presentation-updatedAt-label": {
+        "messagekey": "presentation-updatedAtLabel"
+    },
+    ".csc-presentation-presentationRefNumber-label": {
+        "messagekey": "presentation-presentationRefNumberLabel"
+    }
+}

@@ -222,21 +222,25 @@ public class TestUIRecords {
 		
 		tester.testUIspec(jetty, "/cataloging/uischema", "collection-object.uischema");
 		tester.testUIspec(jetty, "/acquisition/uischema", "acquisition.uischema");
-		tester.testUIspec(jetty, "/conditioncheck-search/uischema", "conditioncheck-search.uischema");
-		tester.testUIspec(jetty, "/conditioncheck/uischema", "conditioncheck.uischema");
-		tester.testUIspec(jetty, "/valuationcontrol-search/uischema", "valuationcontrol-search.uischema");
-		tester.testUIspec(jetty, "/valuationcontrol/uischema", "valuationcontrol.uischema");
+		tester.testUIspec(jetty, "/presentation-search/uischema", "presentation-search.uischema");
+ 	    tester.testUIspec(jetty, "/presentation/uischema", "presentation.uischema");
+ 	    tester.testUIspec(jetty, "/conditioncheck-search/uischema", "conditioncheck-search.uischema");
+	    tester.testUIspec(jetty, "/conditioncheck/uischema", "conditioncheck.uischema");
+	    tester.testUIspec(jetty, "/valuationcontrol-search/uischema", "valuationcontrol-search.uischema");
+	    tester.testUIspec(jetty, "/valuationcontrol/uischema", "valuationcontrol.uischema");
 		
 		tester.testUIspec(jetty, "/cataloging/uispec", "collection-object.uispec");
 		tester.testUIspec(jetty, "/intake/uispec", "intake.uispec");
+		tester.testUIspec(jetty, "/presentation-search/uispec", "presentation-search.uispec");
+ 	    tester.testUIspec(jetty, "/presentation/uispec", "presentation.uispec");
 		tester.testUIspec(jetty, "/loanout/uispec", "loanout.uispec");
 		tester.testUIspec(jetty, "/loanin/uispec", "loanin.uispec");
 		tester.testUIspec(jetty, "/acquisition/uispec", "acquisition.uispec");
 		tester.testUIspec(jetty, "/acquisition-search/uispec", "acquisition-search.uispec");
-		tester.testUIspec(jetty, "/conditioncheck/uispec", "conditioncheck.uispec");
-		tester.testUIspec(jetty, "/conditioncheck-search/uispec", "conditioncheck-search.uispec");
-		tester.testUIspec(jetty, "/valuationcontrol-search/uispec", "valuationcontrol-search.uispec");
-		tester.testUIspec(jetty, "/valuationcontrol/uispec", "valuationcontrol.uispec");
+ 	    tester.testUIspec(jetty, "/conditioncheck/uispec", "conditioncheck.uispec");
+	    tester.testUIspec(jetty, "/conditioncheck-search/uispec", "conditioncheck-search.uispec");
+	    tester.testUIspec(jetty, "/valuationcontrol-search/uispec", "valuationcontrol-search.uispec");
+	    tester.testUIspec(jetty, "/valuationcontrol/uispec", "valuationcontrol.uispec");
 
 	}
 
@@ -264,9 +268,9 @@ public class TestUIRecords {
 	}
 
 
-	/**
- 	 * Test Conditioncheck Procedure CRUDL
- 	 */
+ 	/**
+     * Test Conditioncheck Procedure CRUDL
+     */
 	@Test public void testProcedureConditioncheck() throws Exception {
 		log.info("Testing conditioncheck Procedure");
 		tester.testPostGetDelete(jetty, "/conditioncheck/", tester.conditioncheckCreate(), "conditionCheckNote");
@@ -299,6 +303,23 @@ public class TestUIRecords {
 		tester.testUIspec(jetty, "/acquisition-search/uischema", "acquisition-search.uischema");
 	}
 
+
+	/**
+     * Test Presentation Procedure CRUDL
+     */
+	@Test public void testProcedurePresentation() throws Exception {
+		log.info("Testing presentation Procedure");
+		tester.testPostGetDelete(jetty, "/presentation/", tester.presentationCreate(), "presentationNote");
+		tester.testLists(jetty, "/presentation/", tester.presentationCreate(), "items");
+		log.info("Testing UISCHEMA");
+		tester.testUIspec(jetty, "/presentation/uischema", "presentation.uischema");
+		log.info("Testing UISPEC");
+		tester.testUIspec(jetty, "/presentation/uispec", "presentation.uispec");
+		log.info("Testing Search UISPEC");
+		tester.testUIspec(jetty, "/presentation-search/uispec", "presentation-search.uispec");
+		log.info("Testing Search UISCHEMA");
+		tester.testUIspec(jetty, "/presentation-search/uischema", "presentation-search.uischema");
+	}
 
 	/**
 	 * Test Group Procedure CRUDL
@@ -357,6 +378,8 @@ public class TestUIRecords {
         tester.testUIspec(jetty, "/place-search/uispec", "place-search.uispec");
         tester.testUIspec(jetty, "/work/uispec", "work.uispec");
         tester.testUIspec(jetty, "/work-search/uispec", "work-search.uispec");
+        tester.testUIspec(jetty, "/exhibition/uispec", "exhibition.uispec");
+        tester.testUIspec(jetty, "/exhibition-search/uispec", "exhibition-search.uispec");
 
 		log.info("Testing UISCHEMA");
 		tester.testUIspec(jetty, "/person/uischema", "person.uischema");
@@ -366,6 +389,8 @@ public class TestUIRecords {
         tester.testUIspec(jetty, "/place-search/uischema", "place-search.uischema");
         tester.testUIspec(jetty, "/work/uischema", "work.uischema");
         tester.testUIspec(jetty, "/work-search/uischema", "work-search.uischema");
+        tester.testUIspec(jetty, "/exhibition/uischema", "exhibition.uischema");
+        tester.testUIspec(jetty, "/exhibition-search/uischema", "exhibition-search.uischema");
 	}
 	
 
@@ -457,7 +482,7 @@ public class TestUIRecords {
 	 */
 	@Test public void testSearch() throws Exception {
 		log.info("Testing Search ordering");
-		String[] allRecords = {"acquisition","loanin","loanout","cataloging","objectexit","intake","group","movement","conditioncheck","valuationcontrol"};
+		String[] allRecords = {"acquisition","loanin","loanout","cataloging","objectexit","intake","group","movement","presentation","conditioncheck","valuationcontrol"};
 		
 		for(String r : allRecords) {
 			log.info("Testing Search ordering: "+r);

@@ -11,8 +11,8 @@
 				<!-- Groan - the code that handles generic relations uses services-url 
 						 as the types against which it checks, while the hierarchy code 
 						 uses the record id. Ugh. -->
-        <sourceTypes>location,locationauthorities,personauthorities,person,citationauthorities,citation,organization,taxon,taxonomyauthority,concept,conceptauthorities,place,placeauthorities,collection-object,work,workauthorities</sourceTypes>
-        <destinationTypes>location,locationauthorities,personauthorities,person,citationauthorities,citation,organization,taxon,taxonomyauthority,concept,conceptauthorities,place,placeauthorities,collection-object,work,workauthorities</destinationTypes>
+        <sourceTypes>location,locationauthorities,personauthorities,person,citationauthorities,citation,organization,taxon,taxonomyauthority,concept,conceptauthorities,place,placeauthorities,collection-object,work,workauthorities,exhibition,exhibitionauthorities</sourceTypes>
+        <destinationTypes>location,locationauthorities,personauthorities,person,citationauthorities,citation,organization,taxon,taxonomyauthority,concept,conceptauthorities,place,placeauthorities,collection-object,work,workauthorities,exhibition,exhibitionauthorities</destinationTypes>
         <showinui>true</showinui>
     </relation>
     <relation id="narrowerContexts">
@@ -27,16 +27,16 @@
 				<!-- Groan - the code that handles generic relations uses services-url 
 						 as the types against which it checks, while the hierarchy code 
 						 uses the record id. Ugh. -->
-        <sourceTypes>location,locationauthorities,personauthorities,person,citationauthorities,citation,organization,taxon,taxonomyauthority,concept,conceptauthorities,place,placeauthorities,collection-object,work,workauthorities</sourceTypes>
-        <destinationTypes>location,locationauthorities,personauthorities,person,citationauthorities,citation,organization,taxon,taxonomyauthority,concept,conceptauthorities,place,placeauthorities,collection-object,work,workauthorities</destinationTypes>
+        <sourceTypes>location,locationauthorities,personauthorities,person,citationauthorities,citation,organization,taxon,taxonomyauthority,concept,conceptauthorities,place,placeauthorities,collection-object,work,workauthorities,exhibition,exhibitionauthorities</sourceTypes>
+        <destinationTypes>location,locationauthorities,personauthorities,person,citationauthorities,citation,organization,taxon,taxonomyauthority,concept,conceptauthorities,place,placeauthorities,collection-object,work,workauthorities,exhibition,exhibitionauthorities</destinationTypes>
         <showinui>true</showinui>
     </relation>
     <relation id="broader">
         <displayName>has broader term</displayName>
         <directional>true</directional>
-        <type>hierarchical</type>    
-        <sourceTypes>collectionobjects,intakes,acquisitions,loansin,loansout,movements,objectexit,media,conditionchecks,valuationcontrols</sourceTypes>
-        <destinationTypes>collectionobjects,intakes,acquisitions,loansin,loansout,movements,objectexit,media,conditionchecks,valuationcontrols</destinationTypes>
+        <type>hierarchical</type>
+        <sourceTypes>collectionobjects,intakes,acquisitions,loansin,loansout,presentations,movements,objectexit,media,conditionchecks,valuationcontrols</sourceTypes>
+        <destinationTypes>collectionobjects,intakes,acquisitions,loansin,loansout,presentations,movements,objectexit,media,conditionchecks,valuationcontrols</destinationTypes>
     </relation>
     <relation id="affects">
         <displayName>affects</displayName>
@@ -44,7 +44,7 @@
 				<!-- Groan - the code that handles generic relations uses services-url 
 						 as the types against which it checks, while the hierarchy code 
 						 uses the record id. Ugh. -->
-        <sourceTypes>collectionobjects,intakes,acquisitions,groups,loansin,loansout,movements,objectexit,media,conditionchecks,valuationcontrols</sourceTypes>
+        <sourceTypes>collectionobjects,intakes,acquisitions,groups,loansin,loansout,movements,presentations,objectexit,media,conditionchecks,valuationcontrols</sourceTypes>        <destinationTypes>collectionobjects,intakes,acquisitions,groups,loansin,loansout,presentations,conditionchecks,valuationcontrols,movements,objectexit,media</destinationTypes>
         <destinationTypes>collectionobjects,intakes,acquisitions,groups,loansin,loansout,movements,objectexit,media,conditionchecks,valuationcontrols</destinationTypes>
     </relation>
 </relationships>

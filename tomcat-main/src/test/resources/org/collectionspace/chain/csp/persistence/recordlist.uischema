@@ -10,6 +10,9 @@
       "location", 
       "loanin", 
       "loanout", 
+      "presentation", 
+      "conditioncheck", 
+      "valuationcontrol", 
       "acquisition", 
       "organization", 
       "ulan_oa", 
@@ -26,9 +29,8 @@
       "group", 
       "work",
       "cona_work",
-      "media",
-      "conditioncheck",
-      "valuationcontrol"
+      "media"
+      "exhibition",
     ], 
     "type": "array"
   }

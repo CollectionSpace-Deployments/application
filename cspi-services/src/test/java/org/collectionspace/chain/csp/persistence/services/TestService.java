@@ -87,6 +87,7 @@ public class TestService extends ServicesBaseClass {
                 testXMLJSON(spec, "place", "placeXMLJSON.xml", "placeJSON.json");
                 testXMLJSON(spec, "citation", "citation.xml", "citation.json");
         testXMLJSON(spec, "work", "work.xml", "work.json");
+        testXMLJSON(spec, "exhibition", "exhibition.xml", "exhibition.json");
 		testXMLJSON(spec, "collection-object", "objectsXMLJSON.xml",
 				"objectsJSON.json");
 
@@ -95,6 +96,7 @@ public class TestService extends ServicesBaseClass {
 		testXMLJSON(spec, "intake", "intake.xml", "intake.json");
 		testXMLJSON(spec, "loanin", "loanin.xml", "loanin.json");
 		testXMLJSON(spec, "loanout", "loanout.xml", "loanout.json");
+		testXMLJSON(spec, "presentation", "presentation.xml", "presentation.json");
 		testXMLJSON(spec, "valuationcontrol", "valuationcontrol.xml", "valuationcontrol.json");
 		testXMLJSON(spec, "movement", "movement.xml", "movement.json");
 		testXMLJSON(spec, "objectexit", "objectexit.xml", "objectexit.json");
@@ -137,6 +139,7 @@ public class TestService extends ServicesBaseClass {
 		testJSONXML(spec, "citation", "citation.xml", "citation.json");
                 testJSONXML(spec, "place", "placeXMLJSON.xml", "placeJSON.json");
         testJSONXML(spec, "work", "work.xml", "work.json");
+        testJSONXML(spec, "exhibition", "exhibition.xml", "exhibition.json");
         // CSPACE-6135: In CollectionObject, the computedCurrentLocation field is services-readonly,
         // so the JSON->XML->JSON conversion produces JSON that does not match the initial JSON
         // (computedCurrentLocation is omitted from the XML, so it does not appear in the JSON
@@ -152,6 +155,7 @@ public class TestService extends ServicesBaseClass {
 		testJSONXML(spec, "media", "media.xml", "mediaJSON.json");
 		testJSONXML(spec, "loanin", "loanin.xml", "loanin.json");
 		testJSONXML(spec, "loanout", "loanout.xml", "loanout.json");
+		testJSONXML(spec, "presentation", "presentation.xml", "presentation.json");
 		testJSONXML(spec, "intake", "intake.xml", "intake.json");
 		testJSONXML(spec, "movement", "movement.xml", "movement.json");
 		testJSONXML(spec, "valuationcontrol", "valuationcontrol.xml", "valuationcontrol.json");
@@ -686,6 +690,8 @@ public class TestService extends ServicesBaseClass {
 				"loansin_common/loanInNumber", "LI2010.1.21");
 		testPostGetDelete("loansout/", "loansout_common", "loanout.xml",
 				"loansout_common/loanOutNumber", "LO2010.117");
+		testPostGetDelete("presentations/", "presentations_common", "presentation.xml",
+		        "presentations_common/presentationRefNumber", "PR2013.42");
 		testPostGetDelete("movements/", "movements_common", "movement.xml",
 				"movements_common/movementReferenceNumber", "MV2010.99");
 		testPostGetDelete("valuationcontrols/", "valuationcontrols_common", "valuationcontrol.xml",

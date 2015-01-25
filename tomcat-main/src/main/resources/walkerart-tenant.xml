@@ -1,0 +1,79 @@
+<cspace-config tenantname="walkerart">
+
+	<tenantid>5</tenantid>
+	<version>11</version>
+	<include src="settings.xml,walkerart-settings.xml" merge="xmlmerge-settings.properties" 
+		strip-root="yes" />
+
+	<spec>
+		<include src="base-relations.xml"/>
+		<include src="base-schemas.xml"/>
+
+		<records>
+			<enum-blank>Please select a value</enum-blank>
+
+			<include src="base-collectionobject.xml,variablemedia-collectionobject.xml,walkerart-collectionobject.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority.xml"/>
+
+			<include src="base-procedure-acquisition.xml,walkerart-procedure-acquisition.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-blobs.xml"/>
+			<include src="base-procedure-groups.xml"/>
+			<include src="base-procedure-intake.xml,walkerart-procedure-intake.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-loanin.xml,walkerart-procedure-loanin.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-loanout.xml,walkerart-procedure-loanout.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-presentation.xml,walkerart-procedure-presentation.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-conditioncheck.xml,walkerart-procedure-conditioncheck.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-valuationcontrol.xml,walkerart-procedure-valuationcontrol.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-media.xml,walkerart-procedure-media.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-movement.xml,walkerart-procedure-movement.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-objectexit.xml,walkerart-procedure-objectexit.xml" merge="xmlmerge.properties"/>
+
+			<include src="base-authority-contact.xml,walkerart-authority-contact.xml" merge="xmlmerge.properties"/>
+                        <!-- IMPORTANT: *-termList.xml files MUST precede their equivalent files. -->
+			<include src="base-authority-location-termList.xml,walkerart-authority-location-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-location.xml,walkerart-authority-location.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-organization-termList.xml"/>
+			<include src="base-authority-organization.xml"/>
+			<include src="base-authority-person-termList.xml,walkerart-authority-person-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-person.xml,walkerart-authority-person.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-citation-termList.xml,walkerart-authority-citation-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-citation.xml,walkerart-authority-citation.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-place-termList.xml"/>
+			<include src="base-authority-place.xml,walkerart-authority-place.xml" merge="xmlmerge.properties"/>
+			
+			<!-- Commented out to disable Taxon for the 'core' tenant per CSPACE-4466 -->
+			<!-- include src="base-authority-taxon-termList.xml"/ -->
+            <!-- include src="base-authority-taxon.xml"/ -->
+			
+			<include src="base-authority-concept-termList.xml"/>
+			<include src="base-authority-concept.xml"/>
+			<include src="base-authority-work-termList.xml,walkerart-authority-work-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-work.xml,walkerart-authority-work.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-exhibition-termList.xml"/>
+			<include src="base-authority-exhibition.xml,walkerart-authority-exhibition.xml" merge="xmlmerge.properties"/>
+
+			<include src="base-vocabularies.xml"/>
+
+			<include src="base-authz-accountrole.xml"/>
+			<include src="base-authz-permission.xml"/>
+			<include src="base-authz-permrole.xml"/>
+			<include src="base-authz-role.xml"/>
+			<include src="base-authz-userperm.xml"/>
+			<include src="base-authz-userrole.xml"/>
+			<include src="base-authz-users.xml"/>
+
+			<include src="base-other-dimension.xml,walkerart-other-dimension.xml" merge="xmlmerge.properties"/>
+			<include src="base-other-hierarchy.xml"/>
+			<include src="base-other-idgenerator.xml"/>
+			<include src="base-other-structureddate.xml"/>
+			<include src="base-other-termlist.xml"/>
+			<include src="base-other-termlistitem.xml"/>
+			<include src="base-other-reporting.xml"/>
+			<include src="base-other-reportingoutput.xml"/>
+			<include src="base-other-searchall.xml"/>
+
+
+		</records>
+
+	</spec>
+</cspace-config>

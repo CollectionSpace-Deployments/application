@@ -28,7 +28,10 @@
                     <field id="loanout">
                         <selector>4b984865-f93d-4481-b874-3dba863ec589</selector>
                     </field>
-                     <field id="conditioncheck">
+                    <field id="presentation">
+                        <selector>dc48e16e-3539-4c70-829d-3703b21d7715</selector>
+                    </field>
+                    <field id="conditioncheck">
                         <selector>585af100-1a35-11e2-892e-0800200c9a66</selector>
                     </field>
                     <!-- 'location' below pertains to 'generic locations' stored -->
@@ -46,9 +49,6 @@
                     <field id="objectexit">
                         <selector>d4eea707-d473-4367-853a-728fbcd9be17</selector>
                     </field>
-                    <field id="valuationcontrol">
-                        <selector>eafbc0cd-70fe-4802-8476-b931b1b0e381</selector>
-                    </field>
                     <field id="media">
                         <selector>cd91d8b8-f346-4925-a425-93e02bd1c5c9</selector>
                     </field>
@@ -61,6 +61,9 @@
                     </field>
                     <field id="uuid">
                         <selector>1fa40353-05b8-4ae6-82a6-44a18b4f3c12</selector>
+                    </field>
+                    <field id="valuationcontrol">
+                        <selector>eafbc0cd-70fe-4802-8476-b931b1b0e381</selector>
                     </field>
                     <!--
                         This is the type for id generators - if you add a new record type that has an id_generator you need to:
