@@ -1,0 +1,7 @@
+*org.eclipse.wst*
+.metadata/
+target
+.settings
+.classpath
+.project
+

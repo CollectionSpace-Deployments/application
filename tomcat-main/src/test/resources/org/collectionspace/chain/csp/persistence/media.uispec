@@ -88,6 +88,7 @@
         "options": {"protoTree": {"expander": {
             "tree": {
                 ".csc-dimension-measuredBy-label": {"messagekey": "dimension-measuredByLabel"},
+                ".csc-dimension-valueConvertedCM-label": {"messagekey": "dimension-valueConvertedCMLabel"},
                 ".csc-dimension-measuredPartGroup": {"decorators": [{
                     "func": "cspace.makeRepeatable",
                     "type": "fluid",
@@ -250,7 +251,9 @@
                                                         "type": "fluid"
                                                     }],
                                                     "value": "${{row}.valueDate}"
-                                                }
+                                                },
+                                                ".csc-dimension-valueConvertedInch": "${{row}.valueConvertedInch}",
+                                                ".csc-dimension-valueConvertedCM": "${{row}.valueConvertedCM}"
                                             },
                                             "type": "fluid.noexpand"
                                         }},
@@ -290,16 +293,17 @@
                         "elPath": "fields.measuredPartGroup"
                     }
                 }]},
-                ".csc-dimension-measuredPart-label": {"messagekey": "dimension-measuredPartLabel"},
-                ".csc-dimension-value-label": {"messagekey": "dimension-valueLabel"},
-                ".csc-dimension-valueDate-label": {"messagekey": "dimension-valueDateLabel"},
                 ".csc-dimension-measurementMethod-label": {"messagekey": "dimension-measurementMethodLabel"},
                 ".csc-dimension-dimensionInformation-label": {"messagekey": "dimension-dimensionInformationLabel"},
                 ".csc-dimension-measuredPartGroup-label": {"messagekey": "dimension-measuredPartGroupLabel"},
                 ".csc-dimension-dimension-label": {"messagekey": "dimension-dimensionLabel"},
                 ".csc-measuredPartGroup-dimensionSubGroup-label": {"messagekey": "measuredPartGroup-dimensionSubGroupLabel"},
                 ".csc-dimension-measurementUnit-label": {"messagekey": "dimension-measurementUnitLabel"},
+                ".csc-dimension-value-label": {"messagekey": "dimension-valueLabel"},
+                ".csc-dimension-measuredPart-label": {"messagekey": "dimension-measuredPartLabel"},
                 ".csc-dimension-valueQualifier-label": {"messagekey": "dimension-valueQualifierLabel"},
+                ".csc-dimension-valueDate-label": {"messagekey": "dimension-valueDateLabel"},
+                ".csc-dimension-valueConvertedInch-label": {"messagekey": "dimension-valueConvertedInchLabel"},
                 ".csc-dimension-dimensionSummary-label": {"messagekey": "dimension-dimensionSummaryLabel"},
                 ".csc-dimension-dimensionNote-label": {"messagekey": "dimension-dimensionNoteLabel"}
             },
@@ -324,6 +328,7 @@
                     "protoTree": {"expander": {
                         "tree": {
                             ".csc-dimension-measuredBy-label": {"messagekey": "dimension-measuredByLabel"},
+                            ".csc-dimension-valueConvertedCM-label": {"messagekey": "dimension-valueConvertedCMLabel"},
                             ".csc-dimension-measuredPartGroup": {"decorators": [{
                                 "func": "cspace.makeRepeatable",
                                 "type": "fluid",
@@ -486,7 +491,9 @@
                                                                     "type": "fluid"
                                                                 }],
                                                                 "value": "${{row}.valueDate}"
-                                                            }
+                                                            },
+                                                            ".csc-dimension-valueConvertedInch": "${{row}.valueConvertedInch}",
+                                                            ".csc-dimension-valueConvertedCM": "${{row}.valueConvertedCM}"
                                                         },
                                                         "type": "fluid.noexpand"
                                                     }},
@@ -526,16 +533,17 @@
                                     "elPath": "fields.blobs.0.measuredPartGroup"
                                 }
                             }]},
-                            ".csc-dimension-measuredPart-label": {"messagekey": "dimension-measuredPartLabel"},
-                            ".csc-dimension-value-label": {"messagekey": "dimension-valueLabel"},
-                            ".csc-dimension-valueDate-label": {"messagekey": "dimension-valueDateLabel"},
                             ".csc-dimension-measurementMethod-label": {"messagekey": "dimension-measurementMethodLabel"},
                             ".csc-dimension-dimensionInformation-label": {"messagekey": "dimension-dimensionInformationLabel"},
                             ".csc-dimension-measuredPartGroup-label": {"messagekey": "dimension-measuredPartGroupLabel"},
                             ".csc-dimension-dimension-label": {"messagekey": "dimension-dimensionLabel"},
                             ".csc-measuredPartGroup-dimensionSubGroup-label": {"messagekey": "measuredPartGroup-dimensionSubGroupLabel"},
                             ".csc-dimension-measurementUnit-label": {"messagekey": "dimension-measurementUnitLabel"},
+                            ".csc-dimension-value-label": {"messagekey": "dimension-valueLabel"},
+                            ".csc-dimension-measuredPart-label": {"messagekey": "dimension-measuredPartLabel"},
                             ".csc-dimension-valueQualifier-label": {"messagekey": "dimension-valueQualifierLabel"},
+                            ".csc-dimension-valueDate-label": {"messagekey": "dimension-valueDateLabel"},
+                            ".csc-dimension-valueConvertedInch-label": {"messagekey": "dimension-valueConvertedInchLabel"},
                             ".csc-dimension-dimensionSummary-label": {"messagekey": "dimension-dimensionSummaryLabel"},
                             ".csc-dimension-dimensionNote-label": {"messagekey": "dimension-dimensionNoteLabel"}
                         },

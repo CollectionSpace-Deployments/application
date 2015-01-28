@@ -35,9 +35,9 @@
                 "digest": {"type": "string"},
                 "rightsHolder": {"type": "string"},
                 "sourceUrl": {"type": "string"},
-                "publisher": {"type": "string"},
                 "creator": {"type": "string"},
                 "updatedBy": {"type": "string"},
+                "publisher": {"type": "string"},
                 "id": {"type": "string"},
                 "languages": {
                     "items": {
@@ -102,6 +102,8 @@
                     "type": "array"
                 },
                 "refName": {"type": "string"},
+                "filename": {"type": "string"},
+                "dateCreated": {"type": "string"},
                 "dateGroup": {
                     "items": {
                         "properties": {
@@ -164,8 +166,6 @@
                     },
                     "type": "array"
                 },
-                "filename": {"type": "string"},
-                "dateCreated": {"type": "string"},
                 "measuredPartGroup": {
                     "items": {
                         "properties": {
@@ -190,7 +190,9 @@
                                             "type": "string"
                                         },
                                         "measuredBy": {"type": "string"},
+                                        "valueConvertedInch": {"type": "string"},
                                         "valueDate": {"type": "date"},
+                                        "valueConvertedCM": {"type": "string"},
                                         "measurementUnit": {
                                             "default": "",
                                             "type": "string"

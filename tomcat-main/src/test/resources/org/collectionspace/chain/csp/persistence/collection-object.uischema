@@ -180,7 +180,9 @@
                                             "type": "string"
                                         },
                                         "measuredBy": {"type": "string"},
+                                        "valueConvertedInch": {"type": "string"},
                                         "valueDate": {"type": "date"},
+                                        "valueConvertedCM": {"type": "string"},
                                         "measurementUnit": {
                                             "default": "",
                                             "type": "string"
