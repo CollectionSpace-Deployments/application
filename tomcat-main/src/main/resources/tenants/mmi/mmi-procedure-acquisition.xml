@@ -1,0 +1,26 @@
+
+<record id="acquisition" is-extension="true" type="procedure">
+    <services-record-path id="collectionspace_core">acquisition_mmi:http://collectionspace.org/services/acquisition/local/mmi,acquisition_mmi</services-record-path>
+
+    <section id="acquisitionInformation">
+
+        <repeat id="acquisitionDateGroupList/acquisitionDateGroup">
+            <group id="acquisitionDateGroup" ui-type="groupfield/structureddate"
+                   ui-search="range" primarykey="dateDisplayDate"
+                   ui-func="cspace.structuredDate" xxx-services-no-repeat="true">
+            </group>
+        </repeat>
+        <field id="acquisitionMethod" ui-search="repeatable" seperate_ui_container="true">
+            <selector>acquisition-acquisition-method</selector>
+            <options>
+                <option id="gift" default="yes">Gift</option>
+                <option id="purchase">Purchase</option>
+                <option id="bequest">Bequest</option>
+                <option id="loan">Loan</option>
+                <option id="restricted-gift">Restricted Gift</option>
+            </options>
+        </field>
+        <field id="extent" section="acquisitionInformation" datatype="text" />
+    </section>
+
+</record>
