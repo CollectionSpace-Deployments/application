@@ -57,6 +57,7 @@
 			</tenant>
 			<repository>
 				<domain>mmi-domain</domain>
+                <name>mmi</name>
 				<client>nuxeo-java</client>
 				<dateformats>
 					<pattern>MM/dd/yyyy</pattern>
