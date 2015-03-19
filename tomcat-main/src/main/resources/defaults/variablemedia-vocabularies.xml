@@ -1,0 +1,47 @@
+
+<instances id="vocabularies">
+    <instance id="vocab-technicalChange">
+        <web-url>technicalChange</web-url>
+        <title-ref>technicalChange</title-ref>
+        <title>Technical Change</title>
+        <options>
+            <option id="codecompilation">code compilation</option>
+            <option id="emulation">emulation</option>
+            <option id="migration">migration</option>
+            <option id="refurbishing">refurbishing</option>
+        </options>
+    </instance>
+    <instance id="vocab-technicalChangeReason">
+        <web-url>technicalChangeReason</web-url>
+        <title-ref>technicalChangeReason</title-ref>
+        <title>Technical Change Reason</title>
+        <options>
+            <option id="conservation">conservation</option>
+            <option id="exhibition">exhibition</option>
+            <option id="inventory">inventory</option>
+            <option id="refurbishing">refurbishing</option>
+        </options>
+    </instance>
+    <instance id="vocab-conditionPreviousSupport">
+        <web-url>conditionPreviousSupport</web-url>
+        <title-ref>conditionPreviousSupport</title-ref>
+        <title>Condition Check - Previous Support</title>
+        <options>
+            <option id="conservation">conservation</option>
+            <option id="exhibition">exhibition</option>
+            <option id="inventory">inventory</option>
+            <option id="refurbishing">refurbishing</option>
+        </options>
+    </instance>
+    <instance id="vocab-conditionNewSupport">
+        <web-url>conditionNewSupport</web-url>
+        <title-ref>conditionNewSupport</title-ref>
+        <title>Condition Check - New Support</title>
+        <options>
+            <option id="conservation">conservation</option>
+            <option id="exhibition">exhibition</option>
+            <option id="inventory">inventory</option>
+            <option id="refurbishing">refurbishing</option>
+        </options>
+    </instance>
+</instances>

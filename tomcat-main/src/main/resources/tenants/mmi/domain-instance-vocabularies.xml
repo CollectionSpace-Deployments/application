@@ -1,0 +1,3 @@
+<root>
+    <include src="variablemedia-vocabularies.xml" strip-root="yes"/>
+</root>
