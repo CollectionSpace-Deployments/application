@@ -3,21 +3,21 @@
     <!-- Information about your extension schema goes here -->
     <services-record-path id="variablemedia">conditionchecks_variablemedia:http://collectionspace.org/services/conditioncheck/domain/variablemedia,conditionchecks_variablemedia</services-record-path>
 
-    <section id="technicalChanges">
-        <repeat id="technicalChangesGroupList/technicalChangesGroup">
-            <field id="technicalChange" section="variablemedia" ui-search="repeatable" autocomplete="vocab-technicalChange" ui-type="enum" />
+    <section id="technicalChanges" section="variablemedia">
+        <repeat id="technicalChangesGroupList/technicalChangesGroup" section="variablemedia">
+            <field id="technicalChange" section="variablemedia" ui-search="repeatable" autocomplete="vocab-technicalchange" ui-type="enum" />
 
-            <field id="technicalChangeReason" section="variablemedia" ui-search="repeatable" autocomplete="vocab-technicalChangeReason" ui-type="enum" />
+            <field id="technicalChangeReason" section="variablemedia" ui-search="repeatable" autocomplete="vocab-technicalchangereason" ui-type="enum" />
 
-            <field id="technicalChangeDateGroup" section="variablemedia" ui-type="groupfield/structureddate"
+            <group id="technicalChangeDateGroup" section="variablemedia" ui-type="groupfield/structureddate"
                    ui-search="range" primarykey="technicalChangeDateGroup.dateDisplayDate"
                    ui-func="cspace.structuredDate" />
 
             <field id="technicalChangeNote" section="variablemedia" />
 
-            <field id="previousSupport" section="variablemedia" ui-search="repeatable" autocomplete="vocab-conditionPreviousSupport" ui-type="enum" />
+            <field id="previousSupport" section="variablemedia" ui-search="repeatable" autocomplete="vocab-conditionprevioussupport" ui-type="enum" />
 
-            <field id="newSupport" section="variablemedia" ui-search="repeatable" autocomplete="vocab-conditionNewSupport" ui-type="enum" />
+            <field id="newSupport" section="variablemedia" ui-search="repeatable" autocomplete="vocab-conditionnewsupport" ui-type="enum" />
         </repeat>
     </section>
 </record>
