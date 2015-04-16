@@ -332,5 +332,15 @@
             <option id="references">references</option>
         </options>
     </instance>
+    <instance id="vocab-contententitytype">
+        <web-url>contententitytype</web-url>
+        <title-ref>contententitytype</title-ref>
+        <title>Content - Entity Type</title>
+        <options>
+            <option id="depicts">depicts</option>
+            <option id="references">references</option>
+            <option id="seealso">see also</option>
+        </options>
+    </instance>
 
 </instances>

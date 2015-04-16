@@ -3,8 +3,8 @@
     <!-- Information about your extension schema goes here -->
     <services-record-path id="mmi">collectionobjects_mmi:http://collectionspace.org/services/collectionobject/local/mmi,collectionobjects_mmi</services-record-path>
     <section id="identificationInformation">
-        <field id="administrativeRemarks" section="mmi" datatype="text" />
-        <field id="provenance" section="mmi" datatype="text" />
+        <field id="administrativeRemarks" section="mmi" datatype="largetext" />
+        <field id="provenance" section="mmi" datatype="largetext" />
         <field id="initialCataloging" section="mmi" datatype="boolean" />
         <field id="additionalResearch" section="mmi" datatype="boolean" />
         <field id="curatorApproved" section="mmi" datatype="boolean" />
@@ -16,17 +16,16 @@
             <field id="contentWorkType" autocomplete="vocab-contentworktype"
                    ui-type="enum" section="mmi">
                 <enum>
-                    <default>urn:cspace:cspace.movingimage.us:vocabularies:name(contentworktype):item:name(depicts)'depicts'</default>
                     <blank-value>Please select a value</blank-value>
                 </enum>
             </field>
 
-            <field id="contentWorkNote" ui-type="text" section="mmi" />
+            <field id="contentWorkNote" ui-type="text" section="mmi" datatype="largetext" />
         </repeat>
-        <repeat id="copyrightStatementGroupList/copyrightStatementGroup" section="mmi">
-            <field id="copyrightStatement" section="mmi" datatype="text" />
+        <repeat id="copyrightStatements" section="mmi">
+            <field id="copyrightStatement" section="mmi" datatype="largetext" />
         </repeat>
-        <field id="objectProductionEntityNote" section="mmi" datatype="text" />
+        <field id="objectProductionEntityNote" section="mmi" datatype="largetext" />
     </section>
     <section id="contentInformation">
         <repeat id="contentEntitiesGroupList/contentEntitiesGroup" section="mmi">
@@ -34,16 +33,14 @@
                    autocomplete="organization-organization,person-person" />
 
 
-            <field id="contentEntityType" section="mmi" seperate_ui_container="true">
-                <options>
+            <field id="contentEntityType" section="mmi"
+                   autocomplete="vocab-contententitytype" ui-type="enum" >
+                <enum>
+                    <blank-value>Please select a value</blank-value>
+                </enum>
 
-                    <option id="">Please select a value</option>
-                    <option id="depicts">depicts</option>
-                    <option id="references">references</option>
-                    <option id="seealso">see also</option>
-                </options>
             </field>
-            <field id="contentEntityNote" section="mmi" datatype="text" />
+            <field id="contentEntityNote" section="mmi" datatype="largetext" />
         </repeat>
     </section>
     <section id="objectHistoryAssociationInformation">

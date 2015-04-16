@@ -3,6 +3,7 @@
 
 	<tenantid>2</tenantid>
 	<version>11</version>
+    <tenantid>5</tenantid>
 	<include src="settings.xml,local-mmi-settings.xml" merge="xmlmerge-setting.properties"
 		strip-root="yes" />
 
