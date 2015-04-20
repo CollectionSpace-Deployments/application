@@ -3,10 +3,7 @@
     <!-- Information about your extension schema goes here -->
     <services-record-path id="mmi">acquisitions_mmi:http://collectionspace.org/services/acquisition/local/mmi,acquisitions_mmi</services-record-path>
     <section id="acquisitionInformation">
-        <field id="accessionDateGroup" datatype="date" ui-type="date">
-            <selector>acquisition-accessionDateGroup</selector>
-            <container-selector>acquisition-accessionDateGroup-container</container-selector>
-        </field>
+        <field id="accessionDateGroup" datatype="date" ui-type="date" />
         <field id="acquisitionMethod">
             <options>
                 <option id="gift" default="yes">Gift</option>
@@ -17,6 +14,6 @@
             </options>
         </field>
 
-        <field id="extent" section="mmi" datatype="text"></field>
+        <field id="extent" section="mmi" datatype="largetext" />
     </section>
 </record>
