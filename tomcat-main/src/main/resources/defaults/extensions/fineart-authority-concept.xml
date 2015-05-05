@@ -25,7 +25,6 @@
             <group id="conceptRelationDateGroup" section="fineart"
                    ui-type="groupfield/structureddate" ui-func="cspace.structuredDate"
                    primarykey="dateDisplayDate">
-                <selector>concept-related-concept-date</selector>
             </group>
         </repeat>
 
